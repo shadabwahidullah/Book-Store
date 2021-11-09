@@ -10,6 +10,7 @@ const BooksList = () => {
     <ul>
       {books.map((book) => {
         const { id } = book;
+        console.log('id as key', id);
         return <Book key={id} book={book} />;
       })}
     </ul>
