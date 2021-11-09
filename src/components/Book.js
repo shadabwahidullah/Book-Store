@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Book = (props) => {
-  const { title, author } = props;
+  const { book } = props;
+  const { title, author } = book;
 
   return (
     <li>
