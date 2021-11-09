@@ -3,9 +3,9 @@ import Book from './Book';
 
 const BooksList = () => (
   <ul>
-    <Book />
-    <Book />
-    <Book />
+    <Book title="Brief history of time" author="Stephen Hawking" />
+    <Book title="Homo Deus" author="Yuval Noah Harrai" />
+    <Book title="Alchemist" author="Puelo Coelo" />
   </ul>
 );
 
