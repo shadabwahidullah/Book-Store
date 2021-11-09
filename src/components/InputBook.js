@@ -3,24 +3,30 @@ import { useDispatch } from 'react-redux';
 import uuid from 'react-uuid';
 import { addBook } from '../redux/books/Books';
 
-const dispatch  = useDispatch();
+const InputBook = () => {
+  const dispatch = useDispatch();
 
-const addNewBook = () => {
-  const newBook = {
-    id: {uuid()},
-    title,
-    author,
-  }
+  const addNewBook = (e) => {
+    console.log(e);
+    const id = uuid();
+    const title = 'something';
+    const author = 'something else';
+    const newBook = {
+      id,
+      title,
+      author,
+    };
 
-  dispatch(addBook(newBook));
-}
+    dispatch(addBook(newBook));
+  };
 
-const InputBook = () => (
-  <form onSubmit={addNewBook()}>
-    <input placeholder="name of the book" />
-    <input placeholder="author of the book" />
-    <button type="submit">Add book</button>
-  </form>
-);
+  return (
+    <form onSubmit={addNewBook()}>
+      <input id="bookTitle" placeholder="name of the book" />
+      <input id="bookAuthor" placeholder="author of the book" />
+      <button type="submit">Add book</button>
+    </form>
+  );
+};
 
 export default InputBook;
