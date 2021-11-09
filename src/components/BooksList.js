@@ -3,12 +3,12 @@ import { useSelector } from 'react-redux';
 import Book from './Book';
 
 const BooksList = () => {
-  const books = useSelector((state) => state);
+  const books = useSelector((state) => state.booksReducer);
   console.log('state at first', books);
 
   return (
     <ul>
-      {books.booksReducer.map((book) => {
+      {books.map((book) => {
         const { id } = book;
         return <Book key={id} book={book} />;
       })}
