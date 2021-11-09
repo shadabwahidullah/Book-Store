@@ -18,10 +18,10 @@ const App = () => (
       </ul>
     </nav>
     <Switch>
-      <Route path="/categories">
+      <Route exact path="/categories">
         <Categories />
       </Route>
-      <Route path="/">
+      <Route exact path="/">
         <BooksPage />
       </Route>
     </Switch>
