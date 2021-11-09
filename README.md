@@ -8,6 +8,7 @@ This project will lay foundations for your Bookstore website. I will create a Re
 - CSS
 - BootStrap
 - React
+- Redux
 - Webpack
 
 
