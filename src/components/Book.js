@@ -10,7 +10,6 @@ const Book = (props) => {
 
   const deleteBook = (event) => {
     const { id } = event.target.parentElement;
-    console.log('id is ', event.target.parentElement.key);
     dispatch(removeBook(id));
   };
 

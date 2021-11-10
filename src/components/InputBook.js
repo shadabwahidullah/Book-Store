@@ -30,7 +30,6 @@ const InputBook = () => {
   return (
     <form
       onSubmit={handleSubmit((event) => {
-        console.log('printed from handle submit', event);
         addNewBook(event);
       })}
     >
