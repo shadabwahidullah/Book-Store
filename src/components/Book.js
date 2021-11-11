@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/Books';
+import { removeBookAPI } from '../redux/books/Books';
 
 const Book = (props) => {
   const { book } = props;
@@ -10,7 +10,7 @@ const Book = (props) => {
 
   const deleteBook = (event) => {
     const { id } = event.target.parentElement;
-    dispatch(removeBook(id));
+    removeBookAPI(id, dispatch);
   };
 
   return (

@@ -46,12 +46,15 @@ export const fetchBooks = (dispatch) => {
 
 export const addBookAPI = async (book, dispatch) => {
   console.log('book is', book);
-  axios({
-    method: 'POST',
-    url: `${BASE_URL}`,
-    data: book,
-  }).then(() => {
+  axios.post(BASE_URL, book).then(() => {
     dispatch({ type: ADD_BOOK, payload: book });
+  });
+};
+
+export const removeBookAPI = (id, dispatch) => {
+  console.log('called id is', id);
+  axios.delete(`${BASE_URL}/${id}`).then(() => {
+    dispatch({ type: REMOVE_BOOK, payload: id });
   });
 };
 
@@ -60,7 +63,7 @@ const reducer = (state = initialState, action) => {
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload);
+      return [...state.filter((book) => book.id !== action.payload)];
     case FETCH_BOOKS_SUCCESS:
       return action.payload;
     default:

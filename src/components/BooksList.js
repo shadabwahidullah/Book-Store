@@ -8,12 +8,12 @@ const BooksList = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     fetchBooks(dispatch);
-    console.log('called');
-  }, []);
+  }, [books]);
   return (
     <ul>
       {books.map((book) => {
         const { id } = book;
+        console.log('the id is ', id);
         return <Book key={id} book={book} />;
       })}
     </ul>
