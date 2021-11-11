@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import uuid from 'react-uuid';
 import { useForm } from 'react-hook-form';
-import { addBook } from '../redux/books/Books';
+import { addBookAPI } from '../redux/books/Books';
 
 const InputBook = () => {
   const {
@@ -19,11 +19,12 @@ const InputBook = () => {
     const { author } = event;
 
     const newBook = {
-      id,
+      item_id: `${id}`,
       title,
-      author,
+      category: author,
     };
-    dispatch(addBook(newBook));
+
+    addBookAPI(newBook, dispatch);
     reset();
   };
 
