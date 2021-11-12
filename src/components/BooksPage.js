@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import BooksList from './BooksList';
 import InputBook from './InputBook';
 
 const BooksPage = () => (
-  <div>
+  <>
     <BooksList />
+    <hr />
     <InputBook />
-  </div>
+  </>
 );
 
 export default BooksPage;

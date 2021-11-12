@@ -10,7 +10,7 @@ const BooksList = () => {
     fetchBooks(dispatch);
   }, []);
   return (
-    <ul>
+    <ul className="book-list">
       {books.map((book) => {
         const { id } = book;
         return <Book key={id} book={book} />;
