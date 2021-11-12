@@ -2,6 +2,9 @@
 
 This project will lay foundations for your Bookstore website. I will create a React and Redux app. I will structure my files using the "feature folder" approach. I will also set up routing using React Router. 
 
+![image](https://user-images.githubusercontent.com/51750930/141540076-774f49c6-3fcc-4866-a50f-643b42ef0a01.png)
+
+
 ## Built With
 
 - HTML 
