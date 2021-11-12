@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto+Slab:wght@200;400;600&display=swap");
 
 body {
   padding: 0%;
   margin: 0%;
   width: 100%;
   font-family: Montserrat, sans-serif;
-  font-weight: 600;
-  font-style: bold;
   height: auto;
   background-color: #f5f6fa;
 }
@@ -15,7 +14,7 @@ h1 {
   font-family: Montserrat, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #0290ff;
-  line-height: 2.313rem;
+  /* line-height: 2.313rem; */
   text-align: center;
 }
 
@@ -42,12 +41,62 @@ h1 {
   padding: 0%;
 }
 
-.nav-item{
-    text-decoration: none;
-    color: #121212;
-    margin: 0% 20%;
+.nav-item {
+  text-decoration: none;
+  color: #121212;
+  margin: 0% 20%;
 }
 
-.nav-item:hover{
-    color: #0290ff ;
+.nav-item:hover {
+  color: #0290ff;
+}
+.book-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0% 10%;
+}
+
+.category {
+  margin: 0px;
+  color: #6e6e6e;
+  font-weight: 600;
+}
+.title {
+  margin: 0px;
+  color: #121212;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.4px;
+}
+.author {
+  margin: 0px;
+  font-family: "Roboto Slab", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #4386bf;
+}
+.buttonsWrapper {
+  display: flex;
+  margin: 20px 0px;
+}
+.button {
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  color: #4386bf;
+}
+
+.button:hover{
+    cursor: pointer;
+    color: black;
+}
+.separator {
+  width: 1px;
+  height: 15px;
+  background-color: #4386bf;
+  margin: 0px 10px;
+  align-self: center;
 }
