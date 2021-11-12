@@ -8,13 +8,14 @@ import Categories from './components/Categories';
 const App = () => (
   <div className="panel-bg">
     <Router>
-      <nav>
-        <ul>
+      <nav className="navbar">
+        <h1>Awesome Books CMS</h1>
+        <ul className="nav-list">
           <li>
-            <Link to="/">Books</Link>
+            <Link className="nav-item" to="/">Books</Link>
           </li>
           <li>
-            <Link to="/categories">Categories</Link>
+            <Link className="nav-item" to="/categories">Categories</Link>
           </li>
         </ul>
       </nav>
