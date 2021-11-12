@@ -2,8 +2,6 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { removeBookAPI } from '../redux/books/Books';
 
-import styles from '../styles/book.module.css';
-
 const Book = (props) => {
   const { book } = props;
   const { id, title, author } = book;
@@ -16,7 +14,7 @@ const Book = (props) => {
   };
 
   return (
-    <li className={styles.bookPanel} id={id}>
+    <li className="book-panel" id={id}>
       <div>
         <h3 className="category">Action</h3>
         <h2 className="title">{title}</h2>
@@ -40,6 +38,20 @@ const Book = (props) => {
             Edit
           </button>
         </div>
+      </div>
+      <div>
+        <div className="circle-wrap">
+          <div className="circle">
+            <div className="mask full">
+              <div className="fill" />
+            </div>
+            <div className="mask half">
+              <div className="fill" />
+            </div>
+            <div className="inside-circle"> 75% </div>
+          </div>
+        </div>
+        <div />
       </div>
     </li>
   );

@@ -57,6 +57,11 @@ h1 {
   padding: 0% 10%;
 }
 
+.book-panel{
+   display: grid;
+   grid-template-columns: 1fr 1fr; 
+}
+
 .category {
   margin: 0px;
   color: #6e6e6e;
@@ -100,3 +105,65 @@ h1 {
   margin: 0px 10px;
   align-self: center;
 }
+
+/* circle for progress bar */
+
+.circle-wrap {
+    width: 80px;
+    height: 80px;
+    background: #fefcff;
+    border-radius: 50%;
+    border: 1px solid #cdcbd0;
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 80px, 80px, 40px);
+  }
+  
+  .circle-wrap .inside-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #d2eaf1;
+    line-height: 68px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #1e51dc;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  
+  /* color animation */
+  
+  /* 3rd progress bar */
+  .mask .fill {
+    clip: rect(0px, 40px, 80px, 0px);
+    background-color: #227ded;
+  }
+  
+  .mask.full,
+  .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(135deg);
+  }
+  
+  @keyframes fill{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(135deg);
+    }
+  }
+  
