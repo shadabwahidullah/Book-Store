@@ -38,14 +38,14 @@ const InputBook = () => {
       {/* eslint-disable react/jsx-props-no-spreading */}
       <input
         className="input"
-        {...register('title', { required: true })}
-        placeholder="name of the book"
+        {...register('title', { required: true && (<span />) })}
+        placeholder="Book title"
       />
       {errors.title?.type === 'required' && 'Title is required'}
       <input
         className="input"
         {...register('author', { required: true })}
-        placeholder="author of the book"
+        placeholder="Author"
       />
       {errors.author?.type === 'required' && 'Author is required'}
       <button className="update-button" type="submit">
