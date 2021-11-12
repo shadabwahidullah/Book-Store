@@ -36,7 +36,7 @@ export const fetchBooks = (dispatch) => {
       const tmpBook = {
         id: book[0],
         title: book[1][0].title,
-        category: book[1][0].category,
+        author: book[1][0].category,
       };
       fetchedBooks.push(tmpBook);
     });
