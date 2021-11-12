@@ -11,8 +11,15 @@ body {
 }
 
 h1 {
-  font-family: Montserrat, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:
+    Montserrat,
+    "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
   color: #0290ff;
   text-align: center;
   font-weight: 600;
@@ -36,9 +43,10 @@ h1 {
   padding: 2% 10%;
   border-bottom: 1px solid #d2eaf1;
 }
-.nav-brand{
-    display: flex;
-    align-items: center;
+
+.nav-brand {
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
@@ -57,13 +65,13 @@ h1 {
   color: #0290ff;
 }
 
-.user{
-    width: 4vh;
-    height: 4vh;
-    border: 1px solid #0290ff; 
-    border-radius: 50px;
-    color: #0290ff;
-    padding: 6px;
+.user {
+  width: 4vh;
+  height: 4vh;
+  border: 1px solid #0290ff;
+  border-radius: 50px;
+  color: #0290ff;
+  padding: 6px;
 }
 
 .book-list {
@@ -73,43 +81,55 @@ h1 {
   padding: 0% 10%;
 }
 
-.book-panel{
-   display: grid;
-   grid-template-columns: 1fr 1fr; 
-   margin: 15px 0px;
-   padding: 10px;
-   border-radius: 4px;
-   border: solid 1px #e8e8e8;
+.book-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
 }
 
-.book-specs{
-    align-self: center;
+.book-specs {
+  align-self: center;
 }
+
 .category {
-  margin: 0px;
+  margin: 0;
   color: #6e6e6e;
   font-weight: 600;
 }
+
 .title {
-  margin: 0px;
+  margin: 0;
   color: #121212;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 600;
   font-size: 30px;
   letter-spacing: 0.4px;
 }
+
 .author {
-  margin: 0px;
-  font-family: "Roboto Slab", "Lucida Sans", "Lucida Sans Regular",
-    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-family:
+    "Roboto Slab",
+    "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #4386bf;
 }
+
 .buttonsWrapper {
   display: flex;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
+
 .button {
   border: none;
   background-color: white;
@@ -117,148 +137,156 @@ h1 {
   color: #4386bf;
 }
 
-.button:hover{
-    cursor: pointer;
-    color: black;
+.button:hover {
+  cursor: pointer;
+  color: black;
 }
+
 .separator {
   width: 1px;
   height: 15px;
   background-color: #4386bf;
-  margin: 0px 10px;
+  margin: 0 10px;
   align-self: center;
 }
-.panel-middle{
-    display: flex;
-    justify-content: center;
+
+.panel-middle {
+  display: flex;
+  justify-content: center;
 }
+
 /* circular progress bar */
 .circle-wrap {
-    width: 80px;
-    height: 80px;
-    background: #fefcff;
-    border-radius: 50%;
-    border: 1px solid #cdcbd0;
+  width: 80px;
+  height: 80px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.mask .fill {
+  clip: rect(0, 40px, 80px, 0);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0, 80px, 80px, 40px);
+}
+
+.circle-wrap .inside-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #d2eaf1;
+  line-height: 68px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .circle-wrap .circle .mask,
-  .circle-wrap .circle .fill {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    border-radius: 50%;
-  }
-  
-  .circle-wrap .circle .mask {
-    clip: rect(0px, 80px, 80px, 40px);
-  }
-  
-  .circle-wrap .inside-circle {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: #d2eaf1;
-    line-height: 68px;
-    text-align: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    color: #1e51dc;
-    position: absolute;
-    z-index: 100;
-    font-weight: 700;
-    font-size: 1.5em;
-  }
-  
-  /* color animation */
-  
-  /* 3rd progress bar */
-  .mask .fill {
-    clip: rect(0px, 40px, 80px, 0px);
-    background-color: #227ded;
-  }
-  
-  .mask.full,
-  .circle .fill {
-    animation: fill ease-in-out 3s;
+
+  100% {
     transform: rotate(135deg);
   }
-  
-  @keyframes fill{
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(135deg);
-    }
-  }
-  /* circular progress bar ends here */
-
-  .book-progress{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-content: center;
-  }
-
-  .progress-percentage{
-      margin: 0px;
-      font-size: 50px;
-      font-weight: 100;
-  }
-
-  .progress-completed{
-      margin: 0px;
-      font-size: 15px;
-      font-weight: 100;
-      color: #6e6e6e;
-  }
-
-  .line{
-      width: 1px;
-      height: 60px;
-      background-color: #c4c2c2;
-      align-self: center;
-      margin: 0px 15px;
-  }
-
-  .progress-chapter{
-      align-self: center;
-      display: flex;
-      flex-direction: column;
-  }
-
-  .current-chapter{
-      margin: 0px;
-      font-size: 15px;
-      font-weight: 100;
-      color: #6e6e6e;
-  }
-  .chapter{
-      margin: 0px;
-      font-size: 25px;
-      font-weight: 200;
-      margin: 10px 0px 20px;
-  }
-.update-button{
-    background-color: #0290ff;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 15px;
 }
 
-hr{
-    margin: 0px 10% 5%;
-    color: #d2eaf1;
-}
-.input-book{
-    display: grid;
-    grid-template-columns: 3fr 1.5fr 1fr ;
-    margin: 0px 10%;
+/* circular progress bar ends here */
+
+.book-progress {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
 }
 
-.input{
-    height: 30px;
-    padding: 5px 10px;
-    margin-right: 10px;
-    font-family: Montserrat, sans-serif;
+.progress-percentage {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.progress-completed {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 100;
+  color: #6e6e6e;
+}
+
+.line {
+  width: 1px;
+  height: 60px;
+  background-color: #c4c2c2;
+  align-self: center;
+  margin: 0 15px;
+}
+
+.progress-chapter {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.current-chapter {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 100;
+  color: #6e6e6e;
+}
+
+.chapter {
+  font-size: 25px;
+  font-weight: 200;
+  margin: 10px 0 20px;
+}
+
+.update-button {
+  background-color: #0290ff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 15px;
+}
+
+hr {
+  margin: 0 10% 5%;
+  color: #d2eaf1;
+}
+
+.input-book {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr 1fr;
+  margin: 0 10%;
+}
+
+.input {
+  height: 30px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-family: Montserrat, sans-serif;
 }
