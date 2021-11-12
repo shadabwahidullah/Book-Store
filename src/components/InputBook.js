@@ -48,8 +48,8 @@ const InputBook = () => {
         placeholder="Author"
       />
       {errors.author?.type === 'required' && 'Author is required'}
-      <button className="update-button" type="submit">
-        Add book
+      <button className="submit-button" type="submit">
+        ADD BOOK
       </button>
     </form>
   );

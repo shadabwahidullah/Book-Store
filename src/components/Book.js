@@ -49,7 +49,7 @@ const Book = (props) => {
               <div className="mask half">
                 <div className="fill" />
               </div>
-              <div className="inside-circle"> 75% </div>
+              <div className="inside-circle"> </div>
             </div>
           </div>
           <div>

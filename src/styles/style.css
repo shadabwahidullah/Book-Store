@@ -247,6 +247,7 @@ h1 {
 }
 
 .progress-chapter {
+font-family: 'Roboto Slab', sans-serif;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -290,4 +291,14 @@ hr {
   padding: 5px 10px;
   margin-right: 10px;
   font-family: Montserrat, sans-serif;
+}
+
+.submit-button{
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 600;
+    background-color: #0290ff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 15px;
 }
