@@ -15,7 +15,7 @@ const Book = (props) => {
 
   return (
     <li className="book-panel" id={id}>
-      <div>
+      <div className="book-specs">
         <h3 className="category">Action</h3>
         <h2 className="title">{title}</h2>
         <h6 className="author">{author}</h6>

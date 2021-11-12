@@ -14,8 +14,9 @@ h1 {
   font-family: Montserrat, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #0290ff;
-  /* line-height: 2.313rem; */
   text-align: center;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 .panel-bg {
@@ -43,7 +44,7 @@ h1 {
 .nav-item {
   text-decoration: none;
   color: #121212;
-  margin: 0% 20%;
+  margin: 0% 50%;
 }
 
 .nav-item:hover {
@@ -65,6 +66,9 @@ h1 {
    border: solid 1px #e8e8e8;
 }
 
+.book-specs{
+    align-self: center;
+}
 .category {
   margin: 0px;
   color: #6e6e6e;
