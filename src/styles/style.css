@@ -29,7 +29,6 @@ h1 {
 
 .navbar {
   display: flex;
-  width: 85vw;
   height: 10vh;
   align-items: center;
   padding: 2% 10%;
