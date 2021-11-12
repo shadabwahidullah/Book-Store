@@ -13,7 +13,6 @@ const BooksList = () => {
     <ul>
       {books.map((book) => {
         const { id } = book;
-        console.log('the id is ', id);
         return <Book key={id} book={book} />;
       })}
     </ul>

@@ -27,11 +27,9 @@ export const removeBook = (payload) => ({
 });
 
 export const fetchBooks = (dispatch) => {
-  console.log('called event');
   axios.get(BASE_URL).then((res) => {
     const books = Object.entries(res.data);
     const fetchedBooks = [];
-    console.log(books.length);
     books.forEach((book) => {
       const tmpBook = {
         id: book[0],
@@ -56,7 +54,6 @@ export const addBookAPI = async (book, dispatch) => {
 };
 
 export const removeBookAPI = (id, dispatch) => {
-  console.log('called id is', id);
   axios.delete(`${BASE_URL}/${id}`).then(() => {
     dispatch({ type: REMOVE_BOOK, payload: id });
   });
