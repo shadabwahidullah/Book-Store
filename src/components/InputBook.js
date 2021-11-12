@@ -19,9 +19,9 @@ const InputBook = () => {
     const { author } = event;
 
     const newBook = {
-      item_id: `${id}`,
+      id: `${id}`,
       title,
-      category: author,
+      author,
     };
 
     addBookAPI(newBook, dispatch);

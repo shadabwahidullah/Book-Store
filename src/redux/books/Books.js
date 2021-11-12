@@ -45,10 +45,14 @@ export const fetchBooks = (dispatch) => {
 };
 
 export const addBookAPI = async (book, dispatch) => {
-  console.log('book is', book);
-  axios.post(BASE_URL, book).then(() => {
-    dispatch({ type: ADD_BOOK, payload: book });
-  });
+  const { id, title, author } = book;
+  const newBook = { item_id: `${id}`, title, category: author };
+
+  axios
+    .post(BASE_URL, newBook)
+    .then(() => {
+      dispatch({ type: ADD_BOOK, payload: book });
+    });
 };
 
 export const removeBookAPI = (id, dispatch) => {
