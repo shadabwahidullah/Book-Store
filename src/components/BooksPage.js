@@ -5,6 +5,7 @@ import InputBook from './InputBook';
 const BooksPage = () => (
   <>
     <BooksList />
+    <hr />
     <InputBook />
   </>
 );

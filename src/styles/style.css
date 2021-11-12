@@ -226,3 +226,19 @@ h1 {
     padding: 5px 15px;
 }
 
+hr{
+    margin: 0px 10% 5%;
+    color: #6e6e6e;
+}
+.input-book{
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 1fr ;
+    margin: 0px 10%;
+}
+
+.input{
+    height: 30px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-family: Montserrat, sans-serif;
+}

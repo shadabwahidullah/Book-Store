@@ -30,22 +30,27 @@ const InputBook = () => {
 
   return (
     <form
+      className="input-book"
       onSubmit={handleSubmit((event) => {
         addNewBook(event);
       })}
     >
       {/* eslint-disable react/jsx-props-no-spreading */}
       <input
+        className="input"
         {...register('title', { required: true })}
         placeholder="name of the book"
       />
       {errors.title?.type === 'required' && 'Title is required'}
       <input
+        className="input"
         {...register('author', { required: true })}
         placeholder="author of the book"
       />
       {errors.author?.type === 'required' && 'Author is required'}
-      <button type="submit">Add book</button>
+      <button className="update-button" type="submit">
+        Add book
+      </button>
     </form>
   );
 };
