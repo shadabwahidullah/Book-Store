@@ -1,0 +1,19 @@
+body {
+  padding: 0%;
+  margin: 0%;
+}
+#root {
+  width: 95vw;
+  height: 95vh;
+  padding: 9.313rem 3.75rem 7.688rem 6.25rem;
+  background-color: #f5f6fa;
+}
+.panel-bg {
+  width: 87.5rem;
+  height: 68.563rem;
+  margin: 0 2.5rem 4.063rem 0;
+  padding: 0 0 49.625rem;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: var(--white-three);
+}
