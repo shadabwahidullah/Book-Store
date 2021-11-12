@@ -32,7 +32,13 @@ h1 {
   display: flex;
   height: 10vh;
   align-items: center;
+  justify-content: space-between;
   padding: 2% 10%;
+  border-bottom: 1px solid #d2eaf1;
+}
+.nav-brand{
+    display: flex;
+    align-items: center;
 }
 
 .nav-list {
@@ -50,6 +56,16 @@ h1 {
 .nav-item:hover {
   color: #0290ff;
 }
+
+.user{
+    width: 4vh;
+    height: 4vh;
+    border: 1px solid #0290ff; 
+    border-radius: 50px;
+    color: #0290ff;
+    padding: 6px;
+}
+
 .book-list {
   display: flex;
   flex-direction: column;
