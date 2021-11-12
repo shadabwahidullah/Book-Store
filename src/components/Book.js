@@ -39,16 +39,22 @@ const Book = (props) => {
           </button>
         </div>
       </div>
-      <div>
-        <div className="circle-wrap">
-          <div className="circle">
-            <div className="mask full">
-              <div className="fill" />
+      <div className="panel-middle">
+        <div className="book-progress">
+          <div className="circle-wrap">
+            <div className="circle">
+              <div className="mask full">
+                <div className="fill" />
+              </div>
+              <div className="mask half">
+                <div className="fill" />
+              </div>
+              <div className="inside-circle"> 75% </div>
             </div>
-            <div className="mask half">
-              <div className="fill" />
-            </div>
-            <div className="inside-circle"> 75% </div>
+          </div>
+          <div>
+            <h5 className="progress-percentage">64%</h5>
+            <h6 className="progress-completed">Completed</h6>
           </div>
         </div>
         <div />
